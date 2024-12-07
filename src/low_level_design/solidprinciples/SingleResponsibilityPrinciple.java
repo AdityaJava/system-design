@@ -78,7 +78,7 @@ class InvoiceDao {
  2. Easy to understand :-
  */
 
-public class SingleResponsibility {
+public class SingleResponsibilityPrinciple {
 
 
 }
