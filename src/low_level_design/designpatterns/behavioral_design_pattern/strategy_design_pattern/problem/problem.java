@@ -1,4 +1,7 @@
 package low_level_design.designpatterns.behavioral_design_pattern.strategy_design_pattern.problem;
+/*
+Now here the problem is that the code for OffRoadVehicle and SportyVehicle is same so for this we can design a strategy for offRoadVehicle and SportsVehicle
+ */
 
 
 interface VehicleInterface {
@@ -30,9 +33,6 @@ class PassengerVehicle implements VehicleInterface {
     }
 }
 
-/*
-Now here the problem is that the code for OffRoadVehicle and SportyVehicle is same so for this we can design a strategy for offRoadVehicle and SportsVehicle
- */
 
 public class problem {
 }
