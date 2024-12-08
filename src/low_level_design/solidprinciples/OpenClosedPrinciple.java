@@ -14,7 +14,7 @@ class InvoiceDao1 {
 }
 
 //Now we change above class to below
-//Though here the name is different because we can't define class with same name but imagine it to be a same class
+//Though here the name is different because we can't define class with same name but imagine it to be a same class that is InvoiceDao1 and InvoiceDao2 are same
 class InvoiceDao2 {
     InvoiceCorrect invoiceCorrect;
 

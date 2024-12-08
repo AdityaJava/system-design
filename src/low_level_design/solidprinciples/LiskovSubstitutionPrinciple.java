@@ -1,8 +1,10 @@
 package low_level_design.solidprinciples;
 
 //Definition: If class B is subtype of class A, then we should be able to replace object A with B without breaking the behaviour of the program
-//In another words: Subclass should extend the capability of parent class not narrow it down
-//For example: suppose ParentClass has 2 features then ChildClass cannot just have 1 feature it should have 2 or more than 2 features
+//In another words: Subclass should extend the capability of parent class and not narrow it down
+//For example: suppose ParentClass has 2 features then the ChildClass cannot just have 1 feature it should have 2 or more than 2 features
+
+import low_level_design.solidprinciples.LiskovSubstitutionSolution.solution.LiskovSubstitutionSolution;
 
 interface BikeInterface {
     void turnOnEngine();
@@ -43,20 +45,11 @@ class Bicycle implements BikeInterface {
         //do something
     }
 }
-//To Solve this we need to create separate interface for bicycle
-interface BicycleInterface {
-    void accelerate();
-}
-
-class Bicycle1 implements BicycleInterface {
-
-    @Override
-    public void accelerate() {
-
-    }
-}
 //---Wrong working End
 
 
 public class LiskovSubstitutionPrinciple {
+
+    //Solution for this problem is in below class
+    LiskovSubstitutionSolution liskovSubstitutionSolution;
 }

@@ -27,7 +27,7 @@ class Bicycle extends Vehicle {
 
     @Override
     public int getNumberOfWheels() {
-        return 0;
+        return 2;
     }
 }
 
@@ -47,11 +47,10 @@ class Car extends EngineVehicle {
 
 public class LiskovSubstitutionSolution {
     public static void main(String[] args) {
-        //Now here it is giving compile time exception for adding bicycle
+        //Now here it is giving compile time exception for adding bicycle as bicycle is not EngineVehicle type
         //This will save us from Runtime Exception. Uncomment code to see it
 //        List<EngineVehicle> engineVehicles = Arrays.asList(new Car(), new Bicycle());
-
-        //This will give NPE for Bicycle at Runtime and compiler is also not able to recognize at compile time
+//
 //        for (EngineVehicle engineVehicle : engineVehicles) {
 //            System.out.println(engineVehicle.startEngine().toString());
 //        }

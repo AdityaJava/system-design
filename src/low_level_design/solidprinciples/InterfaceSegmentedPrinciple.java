@@ -44,7 +44,7 @@ interface ChefInterface {
     void decideMenu();
 }
 
-class Waiter1 implements WaiterInterface {
+class WaiterImpl implements WaiterInterface {
 
     @Override
     public void serveCustomers() {
