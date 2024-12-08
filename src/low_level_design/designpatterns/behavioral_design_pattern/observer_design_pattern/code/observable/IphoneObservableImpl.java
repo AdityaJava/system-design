@@ -33,8 +33,8 @@ public class IphoneObservableImpl implements StocksObservable {
 
     @Override
     public void setStockCount(int newStockAdded) {
-        //If old stock count is zero only then update
-        if (this.stockCount == 0) {
+        //If old stock count is zero and newStock is greater than zero only then Notify
+        if (this.stockCount == 0 && newStockAdded > 0) {
             notifySubscribers();
         }
         stockCount = stockCount + newStockAdded;
