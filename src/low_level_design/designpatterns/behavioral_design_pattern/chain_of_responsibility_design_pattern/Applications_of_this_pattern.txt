@@ -1,0 +1,4 @@
+What are the applications of chain of responsibility design pattern?
+ 1. ATM
+ 2. Any kind of vending machince
+ 3. Design Loggers (Asked in Amazon )
