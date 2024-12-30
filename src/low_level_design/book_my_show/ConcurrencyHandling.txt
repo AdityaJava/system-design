@@ -1,0 +1,14 @@
+It can happen that 2 user might book same seat so we need concurrency handling here.
+There are 2 ways of handling it
+
+1. Pesimistic
+2. Optimistic
+
+1. Pesimistic
+   a. Lock while we read and only release when user updates it
+   b. Other users will fail to read it
+
+2. Optimistic
+   a. It creates version of the object
+   b. It checks the version of the object at the time of update and puts the lock here if it is same means no one has updated it
+   c. If the version is changed it means that someone has changed it and need to read again.
