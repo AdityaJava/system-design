@@ -1,1 +1,5 @@
 1. When only specific operations are allowed then we can use state design pattern
+
+Like example is of TV also has states ON, OFF.
+1. When On we can select channels and when OFF nothing
+
