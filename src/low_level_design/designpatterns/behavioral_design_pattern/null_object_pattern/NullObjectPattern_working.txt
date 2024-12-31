@@ -1,0 +1,3 @@
+1. A null object replaces NULL return type.
+2. No need to put the if check for checking NULL
+3. NULL Object reflects do nothing or default behaviour
