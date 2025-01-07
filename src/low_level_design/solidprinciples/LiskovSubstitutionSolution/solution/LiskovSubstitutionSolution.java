@@ -1,8 +1,5 @@
 package low_level_design.solidprinciples.LiskovSubstitutionSolution.solution;
 
-import java.util.Arrays;
-import java.util.List;
-
 //Here as a solutiion we removed startEngine which is not generic and placed it inside EngineVehicle class
 interface VehicleInterface {
     int getNumberOfWheels();

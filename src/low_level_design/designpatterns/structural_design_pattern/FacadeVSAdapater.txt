@@ -1,0 +1,3 @@
+1. Facade is used  to hide the complexities
+
+2. Adapter is used when the client and the adaptee are not compatible and Adapter acts as mediator

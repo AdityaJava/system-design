@@ -1,0 +1,13 @@
+CLient  -> Facace -> ActualObject
+
+Client -> Proxy  -> ActualObject
+
+
+Though above seems as same but
+1. Facade takes care of multiple objects for a client like Employee, Student etc
+
+2. Proxy of the object will be of same type as of original object and will not handle other objects proxies
+
+Like EmployeeProxy will not handle methods for StudentProxy but
+
+PaymentFacade can have both  objects
