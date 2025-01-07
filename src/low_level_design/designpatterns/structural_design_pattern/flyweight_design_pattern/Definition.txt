@@ -1,0 +1,14 @@
+Definition:
+It is one of the structural design pattern.
+This Pattern helps to reduce the memory usage by sharing data among multiple objects
+
+1. When Memory is limited
+
+2. When objects share Data.
+  - Intrinsic Data: Shared Among objects and remain same once defined one value
+  - Extrinsic Data: Changes based on client input and differes from object to another
+
+3. Creation of Object is expensive
+
+--WHen we can't use
+1. When 2 objects doesn't share the data we can't use flyweight
