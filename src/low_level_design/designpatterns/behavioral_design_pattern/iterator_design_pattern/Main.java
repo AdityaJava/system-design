@@ -6,10 +6,6 @@ import java.util.List;
 
 /**
  * Main
- *
- * Maxxton Group 2025
- *
- * @author a.dudhal (a.dudhal@maxxton.com)
  */
 public class Main {
 
