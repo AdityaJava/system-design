@@ -1,0 +1,1 @@
+It encouragde loose couling by keeping objects from referring to each other explicitlu and allows them to communicate through a mediator object
