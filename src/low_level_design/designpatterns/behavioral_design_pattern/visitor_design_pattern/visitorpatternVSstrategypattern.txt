@@ -1,0 +1,3 @@
+1. Visitor pattern is used for different type of operations like pricecalcution, doMaintenance
+
+2. Strategy pattern is used for different algorithms for same operation like priceCalculationStrategy1, priceCalculationStrategy2
