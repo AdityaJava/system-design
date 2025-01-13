@@ -1,0 +1,5 @@
+1. This patterns allows to add new operations to existing classes without changing their structure
+2. It achieves this by separating the operation from the objects on which it operated
+3. It does double dispatch to achieve this
+
+4. Double dispatch mean, method which need to be invoked decided by the caller object and the object passed in the argument
