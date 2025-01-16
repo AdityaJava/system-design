@@ -1,0 +1,18 @@
+1. This is generally an architecture rather than a design pattern.
+2. Spring boot follows MVC
+
+
+//MVC
+
+View
+1. View is frontend repo
+
+Controller
+1. Controller is backend repo and contains all business logic in it
+
+Mode
+1. Model is separate repo for entities where CRUD operations for entities are done
+2. This repo  have Restcontroller which exposes endpoints for CRUD operations on entities
+
+
+This architecture is generally used when the app is huge and not recomended for large apps
