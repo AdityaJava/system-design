@@ -1,0 +1,17 @@
+When to use?
+Ans: This design pattern provides the ability to revert the object to a previous state that is the UNDO capability.
+and it does not expose the object internal implementation.
+
+This design pattern supports undo so it is also known as snapshot design pattern.
+
+3 Major Components
+
+1. Originator
+ - It represents the object, for which state need to be saved and restored
+ - Expose Methods to save and restore its state using memento object
+
+2. Memento
+ - It represents and object which holds the state of the originator
+
+3. Caretaker
+ - Manages the list of states(i.e. List of Memento)
