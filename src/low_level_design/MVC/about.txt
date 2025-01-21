@@ -15,4 +15,4 @@ Mode
 2. This repo  have RestController which exposes endpoints for CRUD operations on entities
 
 
-This architecture is generally used when the app is huge and not recommended for large apps
+This architecture is generally used when the app is huge and not recommended for small apps
