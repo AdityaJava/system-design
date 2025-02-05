@@ -1,0 +1,3 @@
+1. Network protocols are set of rules and standards that defines how devices communicate and exchange data over network.
+2. These protocols ensure seamless data transmission, error handling and security across different devices and systems.
+3. Example: TCP/IP, HTTP, FTP, DNS and SMTP

@@ -1,5 +1,7 @@
+package inhertancepractice;
+
 /**
- * abc
+ * inhertancepractice.abc
  */
 public class abc {
 
