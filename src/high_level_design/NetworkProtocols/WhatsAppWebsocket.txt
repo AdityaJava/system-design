@@ -1,0 +1,24 @@
+Note:
+1. Only WhatsApp Web uses WebSockets, while phone-to-phone message transfer does not use WebSockets.
+2. WhatsApp Web(The Browser version of WhatsApp) uses Websockets to maintain a realtime connection between your phone
+  and the webclient.
+
+How WhatsApp uses Websockets?
+1. Establishing Connection:
+  When you scan the QR code, WhatsApp Web sends an HTTP request to establish a WebSocket connection with WhatsApp servers.
+  The connection remains persistent, meaning your phone and browser can exchange messages in real-time.
+
+2. Message Synchronization:
+  When a new message is received on your phone, the WhatsApp server pushes it to WhatsApp Web without requiring a new request.
+  If you send a message from WhatsApp Web, it's sent instantly via WebSockets.
+
+3. Delivery & Read Receipts:
+  As soon as the recipient reads your message, a real-time update is sent back to your
+  WebSocket connection, updating the double blue ticks instantly.
+
+4. Connection and Loss of Connection:
+  If your phone disconnects from the internet, the WebSocket connection breaks, and WhatsApp Web shows “Phone not connected”.
+  When your phone reconnects, the WebSocket session is re-established automatically.
+
+
+

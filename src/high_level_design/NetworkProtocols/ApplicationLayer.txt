@@ -1,0 +1,35 @@
+1. ApplicationLayer
+  a.  Client Server Protocols
+  b.  Peer2Peer Protocols
+
+a. Client Server Protocols
+  1. HTTP
+  2. FTP
+  3. SMTP
+  4. Web Sockets
+
+b. Peer2Peer Protocols
+  1. WebRTC
+
+
+1. HTTP (HyperText Transfer Protocol)
+  a. This is used for communication between web browsers (Clients) and web servers.
+  b. Example: . When you type   https://www.google.com it sends HTTP GET request to Google's Server.
+
+2. FTP(File Transfer Protocol)
+  a. FTP is used to transfer files between Client and Server over a network
+  b. Example: . A web developer uploads a website's files(HTML, Images, Scripts) from their computer to a web hosting
+              server using FIleZilla(an FTP Client)
+
+3. SMTP(Simple Mail Transfer Protocol)
+  a. When you send an email from GMAIL, OUTLOOK, YAHOO Mail, the email client (Gmail APP or OUTLOOK) uses SMTP
+     to transfer the email to the recipient's mail server.
+  b. SMTP sends the email, while IMAP/POP3 are used to retrieve emails.
+
+4. Websockets
+  a. Websockets provide full-duplex communication (Both Client and Server can send and receive data simultaneously)
+  b. Unlike HTTP which is request-response based, Websocket establish a persistent connection.
+  c. Used in realtime applications like chat apps, Live Notifications, and online Gaming.
+  d. Example: Whatsapp uses Websockets to sync messages in real time
+  Stock market applications use WebSockets to fetch real-time stock prices.
+
