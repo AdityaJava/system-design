@@ -1,0 +1,41 @@
+1. This is desirable property of Distributed systems with replicated data
+
+CAP
+
+C - CONSISTENCY: Every read receives the most recent write or an error. This means all nodes have same data at the same time
+
+A - Availability: Every request(read/write) receives a response, even if some nodes are down
+
+P - Partition Tolerance: The system continues to function despite network failures(Communication breakdown between nodes)
+For example : The communication between 2 DB nodes is broken and now DATA consistency is not there but still user will get response
+
+Note: All three cannot be used at a same time. Either we can use CA, CP, AP
+---------------------------------------------------------------------------------------------------------------------------------
+Why Can't we have all three?
+
+When network partition (P) occurs, the system is forced to choose between:
+
+1. Consistency(C) : Rejected requests to prevent data inconsistency, making the system temporarily unavailable (That is
+breaking availability
+).
+
+2. Availability(A) : Serving requests with possibly outdated or inconsistent data (That is breaking consistency)
+
+---------------------------------------------------------------------------------------------------------------------------------
+Thus CAP forces tradeoff
+
+1. CP(Consistency + Partition Tolerance): Prioritizes consistency, but may sacrifice availability(e.g
+HBase, MongoDB in strong consistency mode
+).
+
+2. AP(Availability + Partition Tolerence): Prioritizes availability, allowing temporary inconsistencies
+(e.g: DynamoDB, Cassandra).
+
+3. CA(Consistency + Availability): Only Possible if there is no network partition, which is
+unrealistic in distributed systems
+---------------------------------------------------------------------------------------------------------------------------------
+Real World Examples:
+1. CP: Example HBase, ZooKeeper: Used in financial applications where Consistency is crucial.
+
+2. AP: Example Cassandra, DynamoDB: USed in Social Media or real-time applications where availability
+is more important than strict consistency
