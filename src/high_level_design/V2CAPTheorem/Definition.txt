@@ -33,9 +33,25 @@ HBase, MongoDB in strong consistency mode
 
 3. CA(Consistency + Availability): Only Possible if there is no network partition, which is
 unrealistic in distributed systems
+
 ---------------------------------------------------------------------------------------------------------------------------------
 Real World Examples:
 1. CP: Example HBase, ZooKeeper: Used in financial applications where Consistency is crucial.
 
 2. AP: Example Cassandra, DynamoDB: USed in Social Media or real-time applications where availability
 is more important than strict consistency
+
+---------------------------------------------------------------------------------------------------------------------------------
+Where is cap Theorem used?
+
+1. Distributed Databases: Eg Cassandra, MongoDB, DynamoDB, HBase
+
+2. Cloud Storage: e.g. Amazon S3, Google Cloud Storage
+
+3. BlockChain Networks: e.g. Bitcoin, Ethereum
+
+4. Distributed Caching Systems: e.g. Redis, Memcached in distributed mode
+---------------------------------------------------------------------------------------------------------------------------------
+
+1. Banking systems prioritize CP (Consistency + Partition Tolerance).
+2. Social media feeds prioritize AP (Availability + Partition Tolerance).
